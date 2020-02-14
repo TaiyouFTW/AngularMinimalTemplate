@@ -2,7 +2,7 @@
 
 Template for new projects with some essentials packages and basic structure.
 
-Created using CLI Commands(ng new 'projectName' --minimal --skipTests).
+Created using CLI Command: `ng new 'projectName' --minimal --skipTests`
 
 ## Getting Started
 
