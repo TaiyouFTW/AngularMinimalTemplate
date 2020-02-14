@@ -41,6 +41,9 @@ npm run prod
 
 * [Angular](https://angular.io)
 * [Angular CLI](https://cli.angular.io)
+* [Angular Material](https://https://material.angular.io)
+* [Bootstrap 4](https://getbootstrap.com)
+* [FontAwesome](https://fontawesome.com)
 
 ## Authors
 
