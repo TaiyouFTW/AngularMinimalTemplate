@@ -1,10 +1,12 @@
-# AngularTemplate
+# Angular Minimal Template
 
 Template for new projects with some essentials packages and basic structure.
 
+Created using CLI Commands(ng new 'projectName' --minimal --skipTests).
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -21,7 +23,7 @@ Install all node_modules packages using:
 npm install
 ```
 
-Search for `superTemplate` and `super-template` to replace the project name
+Search for `mytemplate` and `my-template` to replace the project name
 
 Run
 ```
