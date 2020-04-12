@@ -14,25 +14,30 @@ import { far } from '@fortawesome/free-regular-svg-icons'; // Regular
 import { fas } from '@fortawesome/free-solid-svg-icons'; // Solid
 
 // Angular material
-// import { MatToolbarModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
 
 // Components
 import { AppComponent } from './app.component';
 import { LoadingComponent } from '@shared/_loading/loading.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './core/footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

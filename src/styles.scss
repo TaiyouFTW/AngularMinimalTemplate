@@ -6,9 +6,16 @@
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/buttons";
-@import "reset";
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "themes";
+@import "~normalize.css";
+
+* {
+    &:active,
+    :focus {
+        outline: none !important;
+    }
+}
 
 html,
 body {
@@ -17,8 +24,17 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: #2d2d2d;
 }
 
 .container {
     overflow: hidden;
+}
+
+.wrapper {
+    min-height: calc(100vh - 128px); // 100% page height - (header height + footer height);
+}
+
+.simpleShadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
 }
