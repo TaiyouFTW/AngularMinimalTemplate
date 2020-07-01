@@ -2,17 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <app-loading></app-loading>
-
-    <app-header></app-header>
-    <div class="wrapper">
-      <router-outlet></router-outlet>
-    </div>
-    <app-footer></app-footer>
-  `,
+  templateUrl: 'app.component.html',
   styles: []
 })
 export class AppComponent {
-  title = 'myTemplate';
+  title = 'angularMinimalTemplate';
 }

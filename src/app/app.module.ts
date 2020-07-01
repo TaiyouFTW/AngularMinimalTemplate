@@ -1,52 +1,52 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
-// Modules
 import { AppRoutingModule } from './app-routing.module';
 
-// Core Folder
-import { ErrorInterceptor } from '@core/interceptors/error.interceptor';
+// Font Awesome imports
+import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
+// import { fas } from '@fortawesome/free-solid-svg-icons';
+// import { far } from '@fortawesome/free-regular-svg-icons';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-// FontAwesome
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { far } from '@fortawesome/free-regular-svg-icons'; // Regular
-import { fas } from '@fortawesome/free-solid-svg-icons'; // Solid
-
-// Angular material
-import { MatToolbarModule } from '@angular/material';
+// Interceptors
+import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 
 // Components
 import { AppComponent } from './app.component';
-import { LoadingComponent } from '@shared/_loading/loading.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FooterComponent } from './core/footer/footer.component';
-import { HeaderComponent } from './core/header/header.component';
+import { SharedModule } from './shared/shared.module';
 
+const components = [
+  AppComponent
+];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoadingComponent,
-    FooterComponent,
-    HeaderComponent,
+    components
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    MatToolbarModule
+    FontAwesomeModule,
+    SharedModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
-
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIconPacks(far, fas);
+    // Add an icon to the library for convenient access in other components
+    // library.addIcons(faCoffee);
+
+    // Add icon package to the library for convenient access in other components
+    // library.addIconPacks(fas, far, fab);
   }
-}
+ }
