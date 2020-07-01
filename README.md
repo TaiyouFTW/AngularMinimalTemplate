@@ -1,27 +1,47 @@
-# AngularMinimalTemplate
+# Angular Minimal Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+This project was generated with Angular CLI version 9.1.9.
 
-## Development server
+Template for new projects with some essentials packages and basic structure.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Created using CLI Command: `ng new 'projectName' --minimal --skipTests`
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* [Node - V10.13 or above](https://nodejs.org/en/)
+* [Angular CLI - V9](https://cli.angular.io)
+* [Angular - V9](https://angular.io)
 
-## Build
+### Installing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Fork or clone the project.
 
-## Running unit tests
+Install all node_modules packages using:
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Search for `angularMinimalTemplate` and replace for the project name
 
-## Running end-to-end tests
+## Deployment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+For production build you can use:
+```
+npm run prod
+```
 
-## Further help
+## Built With
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Angular](https://angular.io)
+* [Angular CLI](https://cli.angular.io)
+* [Angular Material](https://https://material.angular.io)
+* [Bootstrap 4](https://getbootstrap.com)
+* [FontAwesome](https://fontawesome.com)
+
+## Authors
+
+* **Guilherme Moreira** - *Initial work* - [TaiyouFTW](https://github.com/TaiyouFTW)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
