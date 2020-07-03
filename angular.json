@@ -40,7 +40,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularMinimalTemplate",
+            "outputPath": "dist/angular-minimal-template",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -91,22 +91,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularMinimalTemplate:build"
+            "browserTarget": "angular-minimal-template:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularMinimalTemplate:build:production"
+              "browserTarget": "angular-minimal-template:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularMinimalTemplate:build"
+            "browserTarget": "angular-minimal-template:build"
           }
         }
       }
     }
   },
-  "defaultProject": "angularMinimalTemplate"
+  "defaultProject": "angular-minimal-template"
 }

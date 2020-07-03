@@ -21,7 +21,7 @@ Install all node_modules packages using:
 npm install
 ```
 
-Search for `angularMinimalTemplate` and replace for the project name
+Search for `angular-minimal-template` and replace for the project name
 
 ## Deployment
 
